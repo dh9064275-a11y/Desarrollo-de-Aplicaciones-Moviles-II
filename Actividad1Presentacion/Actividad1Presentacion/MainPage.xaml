@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Actividad1Presentacion.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+            <Image
+                Source="dotnet_bot.png"
+                HeightRequest="185"
+                Aspect="AspectFit" />
+
+            <Label
+                Text="Hola, soy David"
+                FontSize="28"
+                FontAttributes="Bold"
+                HorizontalOptions="Center" />
+
+            <Label
+                Text="Soy estudiante de la Tecnicatura de Programación de Sistemas en la Universidad de Ciencias Empresariales y Sociales (UCES). Actualmente, me encuentro aprendiendo desarrollo de aplicaciones móviles con .NET MAUI."
+                FontSize="18"
+                HorizontalTextAlignment="Justify" />
+
+            <Label
+                Text="¡Espero aprender mucho durante el desarrollo de la materia!"
+                FontSize="16"
+                HorizontalTextAlignment="Center" />
+            
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
