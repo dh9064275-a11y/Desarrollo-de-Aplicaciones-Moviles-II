@@ -1,5 +1,26 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
+<!--
+    PROYECTO 2 - VERSIÓN ORIGINAL
+    Actividad 2: Implementación de Shell y rutas.
+
+    En esta versión se utiliza Shell para organizar la navegación
+    mediante un menú lateral y pestañas.
+
+    Estructura:
+
+    Menú lateral
+        └── Aplicación
+              └── Pestañas
+                    ├── Inicio
+                    ├── Perfil
+                    └── Ajustes
+
+    DetallePage no forma parte de las pestañas principales.
+    Es una página secundaria y se registra como una ruta
+    independiente para poder acceder a ella mediante navegación.
+-->
+
 <Shell
     x:Class="Proyecto2Navegacion.AppShell"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
@@ -7,24 +28,44 @@
     xmlns:views="clr-namespace:Proyecto2Navegacion.Views"
     Title="Proyecto 2 - Navegación">
 
-    <!-- Pestañas principales -->
-    <TabBar>
+    <!--
+        MENÚ LATERAL
 
-        <ShellContent
-            Title="Inicio"
-            ContentTemplate="{DataTemplate views:InicioPage}"
-            Route="InicioPage" />
+        FlyoutItem permite acceder a la estructura principal
+        desde el menú lateral de Shell.
+    -->
+    <FlyoutItem
+        Title="Aplicación">
 
-        <ShellContent
-            Title="Perfil"
-            ContentTemplate="{DataTemplate views:PerfilPage}"
-            Route="PerfilPage" />
+        <!--
+            PESTAÑAS PRINCIPALES
 
-        <ShellContent
-            Title="Ajustes"
-            ContentTemplate="{DataTemplate views:AjustesPage}"
-            Route="AjustesPage" />
+            Las tres páginas principales de la aplicación
+            se organizan como pestañas.
+        -->
+        <Tab
+            Title="Principal">
 
-    </TabBar>
+            <!-- Pestaña Inicio -->
+            <ShellContent
+                Title="Inicio"
+                ContentTemplate="{DataTemplate views:InicioPage}"
+                Route="InicioPage" />
+
+            <!-- Pestaña Perfil -->
+            <ShellContent
+                Title="Perfil"
+                ContentTemplate="{DataTemplate views:PerfilPage}"
+                Route="PerfilPage" />
+
+            <!-- Pestaña Ajustes -->
+            <ShellContent
+                Title="Ajustes"
+                ContentTemplate="{DataTemplate views:AjustesPage}"
+                Route="AjustesPage" />
+
+        </Tab>
+
+    </FlyoutItem>
 
 </Shell>

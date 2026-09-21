@@ -1,10 +1,14 @@
-﻿namespace Proyecto2Navegacion
+﻿namespace Proyecto2Navegacion;
+
+public partial class AppShell : Shell
 {
-    public partial class AppShell : Shell
+    public AppShell()
     {
-        public AppShell()
-        {
-            InitializeComponent();
-        }
+        InitializeComponent();
+
+        // Registro de la ruta de la página secundaria.
+        // Esta ruta permitirá navegar hacia DetallePage
+        // sin convertirla en una pestaña principal.
+        Routing.RegisterRoute("DetallePage", typeof(Views.DetallePage));
     }
 }

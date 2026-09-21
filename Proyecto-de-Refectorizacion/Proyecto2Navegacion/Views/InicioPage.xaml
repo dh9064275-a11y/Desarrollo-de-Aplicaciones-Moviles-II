@@ -27,6 +27,15 @@
             FontSize="16"
             HorizontalTextAlignment="Center" />
 
+		<!--
+            Botón utilizado en la versión original para demostrar
+            la navegación hacia una página secundaria mediante Shell.
+        -->
+		<Button
+            Text="Ver detalle"
+            Clicked="OnVerDetalleClicked"
+            HorizontalOptions="Center" />
+
     </VerticalStackLayout>
 
 </ContentPage>

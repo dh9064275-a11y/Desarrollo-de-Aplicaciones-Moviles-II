@@ -11,6 +11,7 @@
         Spacing="20"
         VerticalOptions="Center">
 
+        <!-- Título de la página secundaria -->
         <Label
             Text="Detalle"
             FontSize="32"
@@ -20,8 +21,16 @@
         <Label
             Text="Aquí se mostrará la información del elemento seleccionado."
             FontSize="18"
-            HorizontalTextAlignment="Center" />
+            HorizontalTextAlignment="Center" /> 
+        <!--
+            Este Label mostrará el parámetro recibido
+            mediante la navegación por URI.
+        -->
+        <Label
+            Text="{Binding Id}"
+            FontSize="20"
+            HorizontalOptions="Center" />
 
     </VerticalStackLayout>
 
-</ContentPage>
+</ContentPage>       
