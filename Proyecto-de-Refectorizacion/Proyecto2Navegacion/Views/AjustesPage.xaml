@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<ContentPage
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="Proyecto2Navegacion.Views.AjustesPage"
+    Title="Ajustes">
+
+    <VerticalStackLayout
+        Padding="30"
+        Spacing="20"
+        VerticalOptions="Center">
+
+        <Label
+            Text="Ajustes"
+            FontSize="32"
+            FontAttributes="Bold"
+            HorizontalOptions="Center" />
+
+        <Label
+            Text="Conexiones"
+            FontSize="18"
+            HorizontalOptions="Center" />
+
+        <Label 
+            Text="Dispositivos"
+            FontSize="18"
+            HorizontalOptions="Center"/>
+
+        <Label 
+            Text="Modos y Rutinas"
+            FontSize="18"
+            HorizontalOptions="Center"/>
+
+        <Label 
+            Text="Notificaciones"
+            FontSize="18"
+            HorizontalOptions="Center"/>
+
+        <Switch
+            HorizontalOptions="Center" />
+
+        <Label
+            Text="Activar notificaciones"
+            HorizontalOptions="Center" />
+
+    </VerticalStackLayout>
+
+</ContentPage>
