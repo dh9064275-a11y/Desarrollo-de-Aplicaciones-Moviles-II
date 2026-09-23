@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<ContentPage
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="Proyecto2Refactorizado.Views.InicioPage"
+    Title="Inicio"
+    BackgroundColor="#F5F3EE">
+
+    <ScrollView>
+
+        <VerticalStackLayout
+            Padding="30,35"
+            Spacing="24">
+
+            <!-- ENCABEZADO -->
+
+            <Border
+                BackgroundColor="#111111"
+                StrokeThickness="0"
+                Padding="24"
+                StrokeShape="RoundRectangle 18">
+
+                <Grid
+                    ColumnDefinitions="8,*"
+                    ColumnSpacing="18">
+
+                    <!-- Acento rojo -->
+                    <BoxView
+                        Grid.Column="0"
+                        Color="#D72638"
+                        CornerRadius="4"
+                        VerticalOptions="Fill" />
+
+                    <VerticalStackLayout
+                        Grid.Column="1"
+                        Spacing="6">
+
+                        <Label
+                            Text="PROYECTO 2"
+                            TextColor="#D72638"
+                            FontSize="13"
+                            FontAttributes="Bold" />
+
+                        <Label
+                            Text="Navegación"
+                            TextColor="White"
+                            FontSize="32"
+                            FontAttributes="Bold" />
+
+                        <Label
+                            Text="Versión refactorizada"
+                            TextColor="#B0B0B0"
+                            FontSize="14" />
+
+                    </VerticalStackLayout>
+
+                </Grid>
+
+            </Border>
+
+
+            <!-- PRESENTACIÓN -->
+
+            <VerticalStackLayout
+                Spacing="8">
+
+                <Label
+                    Text="Inicio"
+                    TextColor="#111111"
+                    FontSize="34"
+                    FontAttributes="Bold" />
+
+                <Label
+                    Text="Una navegación más clara, organizada y mantenible."
+                    TextColor="#777777"
+                    FontSize="16" />
+
+            </VerticalStackLayout>
+
+
+            <!-- TARJETAS -->
+
+            <Grid
+                ColumnDefinitions="*,*"
+                ColumnSpacing="14">
+
+                <!-- PERFIL -->
+
+                <Border
+                    Grid.Column="0"
+                    BackgroundColor="#FFFFFF"
+                    Stroke="#E0DDD6"
+                    StrokeThickness="1"
+                    Padding="18"
+                    StrokeShape="RoundRectangle 14">
+
+                    <VerticalStackLayout
+                        Spacing="8">
+
+                        <Label
+                            Text="01"
+                            TextColor="#D72638"
+                            FontSize="13"
+                            FontAttributes="Bold" />
+
+                        <Label
+                            Text="Perfil"
+                            TextColor="#111111"
+                            FontSize="18"
+                            FontAttributes="Bold" />
+
+                        <Label
+                            Text="Información del usuario."
+                            TextColor="#777777"
+                            FontSize="13" />
+
+                    </VerticalStackLayout>
+
+                </Border>
+
+
+                <!-- AJUSTES -->
+
+                <Border
+                    Grid.Column="1"
+                    BackgroundColor="#FFFFFF"
+                    Stroke="#E0DDD6"
+                    StrokeThickness="1"
+                    Padding="18"
+                    StrokeShape="RoundRectangle 14">
+
+                    <VerticalStackLayout
+                        Spacing="8">
+
+                        <Label
+                            Text="02"
+                            TextColor="#D72638"
+                            FontSize="13"
+                            FontAttributes="Bold" />
+
+                        <Label
+                            Text="Ajustes"
+                            TextColor="#111111"
+                            FontSize="18"
+                            FontAttributes="Bold" />
+
+                        <Label
+                            Text="Configuración de la aplicación."
+                            TextColor="#777777"
+                            FontSize="13" />
+
+                    </VerticalStackLayout>
+
+                </Border>
+
+            </Grid>
+
+
+            <!-- ACCIÓN PRINCIPAL -->
+
+            <Border
+                BackgroundColor="#1C1C1C"
+                StrokeThickness="0"
+                Padding="22"
+                StrokeShape="RoundRectangle 16">
+
+                <VerticalStackLayout
+                    Spacing="14">
+
+                    <Label
+                        Text="Explorar detalle"
+                        TextColor="White"
+                        FontSize="20"
+                        FontAttributes="Bold" />
+
+                    <Label
+                        Text="Accedé a una página secundaria mediante una ruta de Shell."
+                        TextColor="#B8B8B8"
+                        FontSize="14" />
+
+                    <Button
+                        Text="VER DETALLE"
+                        Command="{Binding VerDetalleCommand}"
+                        BackgroundColor="#D72638"
+                        TextColor="White"
+                        FontSize="15"
+                        FontAttributes="Bold"
+                        CornerRadius="10"
+                        Padding="22,12"
+                        HorizontalOptions="Start" />
+
+                </VerticalStackLayout>
+
+            </Border>
+
+
+            <!-- PIE -->
+
+            <Label
+                Text="MVVM  •  SHELL  •  ROUTING"
+                TextColor="#999999"
+                FontSize="11"
+                HorizontalOptions="Center"
+                Margin="0,8,0,0" />
+
+        </VerticalStackLayout>
+
+    </ScrollView>
+
+</ContentPage>

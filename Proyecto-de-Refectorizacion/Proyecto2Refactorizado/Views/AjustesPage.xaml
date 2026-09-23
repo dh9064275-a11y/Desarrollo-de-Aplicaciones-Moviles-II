@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<ContentPage
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="Proyecto2Refactorizado.Views.AjustesPage"
+    Title="Ajustes"
+    BackgroundColor="#F5F3EE">
+
+    <ScrollView>
+
+        <VerticalStackLayout
+            Padding="30,35"
+            Spacing="24">
+
+            <!-- ENCABEZADO -->
+
+            <Border
+                BackgroundColor="#111111"
+                StrokeThickness="0"
+                Padding="24"
+                StrokeShape="RoundRectangle 18">
+
+                <Grid
+                    ColumnDefinitions="8,*"
+                    ColumnSpacing="18">
+
+                    <BoxView
+                        Grid.Column="0"
+                        Color="#D72638"
+                        CornerRadius="4"
+                        VerticalOptions="Fill" />
+
+                    <VerticalStackLayout
+                        Grid.Column="1"
+                        Spacing="5">
+
+                        <Label
+                            Text="02 / AJUSTES"
+                            TextColor="#D72638"
+                            FontSize="13"
+                            FontAttributes="Bold" />
+
+                        <Label
+                            Text="Configuración"
+                            TextColor="White"
+                            FontSize="28"
+                            FontAttributes="Bold" />
+
+                        <Label
+                            Text="Preferencias de la aplicación"
+                            TextColor="#B8B8B8"
+                            FontSize="14" />
+
+                    </VerticalStackLayout>
+
+                </Grid>
+
+            </Border>
+
+
+            <!-- OPCIONES -->
+
+            <VerticalStackLayout
+                Spacing="12">
+
+                <!-- CONEXIONES -->
+
+                <Border
+                    BackgroundColor="#111111"
+                    StrokeThickness="0"
+                    Padding="20"
+                    StrokeShape="RoundRectangle 14">
+
+                    <Grid
+                        ColumnDefinitions="60,*"
+                        ColumnSpacing="18">
+
+                        <Label
+                            Text="01"
+                            TextColor="#D72638"
+                            FontSize="13"
+                            FontAttributes="Bold" />
+
+                        <VerticalStackLayout
+                            Grid.Column="1"
+                            Spacing="4">
+
+                            <Label
+                                Text="Conexiones"
+                                TextColor="White"
+                                FontSize="19"
+                                FontAttributes="Bold" />
+
+                            <Label
+                                Text="Administrar conexiones disponibles"
+                                TextColor="#999999"
+                                FontSize="13" />
+
+                        </VerticalStackLayout>
+
+                    </Grid>
+
+                </Border>
+
+
+                <!-- DISPOSITIVOS -->
+
+                <Border
+                    BackgroundColor="#111111"
+                    StrokeThickness="0"
+                    Padding="20"
+                    StrokeShape="RoundRectangle 14">
+
+                    <Grid
+                        ColumnDefinitions="60,*"
+                        ColumnSpacing="18">
+
+                        <Label
+                            Text="02"
+                            TextColor="#D72638"
+                            FontSize="13"
+                            FontAttributes="Bold" />
+
+                        <VerticalStackLayout
+                            Grid.Column="1"
+                            Spacing="4">
+
+                            <Label
+                                Text="Dispositivos"
+                                TextColor="White"
+                                FontSize="19"
+                                FontAttributes="Bold" />
+
+                            <Label
+                                Text="Gestionar dispositivos vinculados"
+                                TextColor="#999999"
+                                FontSize="13" />
+
+                        </VerticalStackLayout>
+
+                    </Grid>
+
+                </Border>
+
+
+                <!-- MODOS -->
+
+                <Border
+                    BackgroundColor="#111111"
+                    StrokeThickness="0"
+                    Padding="20"
+                    StrokeShape="RoundRectangle 14">
+
+                    <Grid
+                        ColumnDefinitions="60,*"
+                        ColumnSpacing="18">
+
+                        <Label
+                            Text="03"
+                            TextColor="#D72638"
+                            FontSize="13"
+                            FontAttributes="Bold" />
+
+                        <VerticalStackLayout
+                            Grid.Column="1"
+                            Spacing="4">
+
+                            <Label
+                                Text="Modos y rutinas"
+                                TextColor="White"
+                                FontSize="19"
+                                FontAttributes="Bold" />
+
+                            <Label
+                                Text="Personalizar tus preferencias"
+                                TextColor="#999999"
+                                FontSize="13" />
+
+                        </VerticalStackLayout>
+
+                    </Grid>
+
+                </Border>
+
+
+                <!-- NOTIFICACIONES -->
+
+                <Border
+                    BackgroundColor="#111111"
+                    StrokeThickness="0"
+                    Padding="20"
+                    StrokeShape="RoundRectangle 14">
+
+                    <Grid
+                        ColumnDefinitions="60,*,Auto"
+                        ColumnSpacing="18">
+
+                        <Label
+                            Text="04"
+                            TextColor="#D72638"
+                            FontSize="13"
+                            FontAttributes="Bold"
+                            VerticalOptions="Start" />
+
+                        <VerticalStackLayout
+                            Grid.Column="1"
+                            Spacing="4">
+
+                            <Label
+                                Text="Notificaciones"
+                                TextColor="White"
+                                FontSize="19"
+                                FontAttributes="Bold" />
+
+                            <Label
+                                Text="Activar avisos de la aplicación"
+                                TextColor="#999999"
+                                FontSize="13" />
+
+                        </VerticalStackLayout>
+
+                        <Switch
+                            Grid.Column="2"
+                            OnColor="#D72638"
+                            ThumbColor="White"
+                            VerticalOptions="Center" />
+
+                    </Grid>
+
+                </Border>
+
+            </VerticalStackLayout>
+
+
+            <!-- PIE -->
+
+            <Label
+                Text="SETTINGS / PREFERENCES"
+                TextColor="#999999"
+                FontSize="11"
+                HorizontalOptions="Center"
+                Margin="0,4,0,0" />
+
+        </VerticalStackLayout>
+
+    </ScrollView>
+
+</ContentPage>

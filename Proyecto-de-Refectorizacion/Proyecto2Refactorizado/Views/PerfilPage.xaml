@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<ContentPage
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="Proyecto2Refactorizado.Views.PerfilPage"
+    Title="Perfil"
+    BackgroundColor="#F5F3EE">
+
+    <ScrollView>
+
+        <VerticalStackLayout
+            Padding="30,35"
+            Spacing="24">
+
+            <!-- ENCABEZADO -->
+
+            <Border
+                BackgroundColor="#111111"
+                StrokeThickness="0"
+                Padding="24"
+                StrokeShape="RoundRectangle 18">
+
+                <Grid
+                    ColumnDefinitions="8,*"
+                    ColumnSpacing="18">
+
+                    <BoxView
+                        Grid.Column="0"
+                        Color="#D72638"
+                        CornerRadius="4"
+                        VerticalOptions="Fill" />
+
+                    <VerticalStackLayout
+                        Grid.Column="1"
+                        Spacing="5">
+
+                        <Label
+                            Text="01 / PERFIL"
+                            TextColor="#D72638"
+                            FontSize="13"
+                            FontAttributes="Bold" />
+
+                        <Label
+                            Text="Información personal"
+                            TextColor="White"
+                            FontSize="28"
+                            FontAttributes="Bold" />
+
+                        <Label
+                            Text="Datos del usuario"
+                            TextColor="#B8B8B8"
+                            FontSize="14" />
+
+                    </VerticalStackLayout>
+
+                </Grid>
+
+            </Border>
+
+
+            <!-- DATOS -->
+
+            <VerticalStackLayout
+                Spacing="12">
+
+                <!-- NOMBRE -->
+
+                <Border
+                    BackgroundColor="#111111"
+                    StrokeThickness="0"
+                    Padding="20"
+                    StrokeShape="RoundRectangle 14">
+
+                    <Grid
+                        ColumnDefinitions="70,*"
+                        ColumnSpacing="18">
+
+                        <Label
+                            Text="01"
+                            TextColor="#D72638"
+                            FontSize="13"
+                            FontAttributes="Bold"
+                            VerticalOptions="Start" />
+
+                        <VerticalStackLayout
+                            Grid.Column="1"
+                            Spacing="4">
+
+                            <Label
+                                Text="Nombre"
+                                TextColor="#999999"
+                                FontSize="13" />
+
+                            <Label
+                                Text="David"
+                                TextColor="White"
+                                FontSize="20"
+                                FontAttributes="Bold" />
+
+                        </VerticalStackLayout>
+
+                    </Grid>
+
+                </Border>
+
+
+                <!-- APELLIDO -->
+
+                <Border
+                    BackgroundColor="#111111"
+                    StrokeThickness="0"
+                    Padding="20"
+                    StrokeShape="RoundRectangle 14">
+
+                    <Grid
+                        ColumnDefinitions="70,*"
+                        ColumnSpacing="18">
+
+                        <Label
+                            Text="02"
+                            TextColor="#D72638"
+                            FontSize="13"
+                            FontAttributes="Bold"
+                            VerticalOptions="Start" />
+
+                        <VerticalStackLayout
+                            Grid.Column="1"
+                            Spacing="4">
+
+                            <Label
+                                Text="Apellido"
+                                TextColor="#999999"
+                                FontSize="13" />
+
+                            <Label
+                                Text="Hernández"
+                                TextColor="White"
+                                FontSize="20"
+                                FontAttributes="Bold" />
+
+                        </VerticalStackLayout>
+
+                    </Grid>
+
+                </Border>
+
+
+                <!-- OCUPACIÓN -->
+
+                <Border
+                    BackgroundColor="#111111"
+                    StrokeThickness="0"
+                    Padding="20"
+                    StrokeShape="RoundRectangle 14">
+
+                    <Grid
+                        ColumnDefinitions="70,*"
+                        ColumnSpacing="18">
+
+                        <Label
+                            Text="03"
+                            TextColor="#D72638"
+                            FontSize="13"
+                            FontAttributes="Bold"
+                            VerticalOptions="Start" />
+
+                        <VerticalStackLayout
+                            Grid.Column="1"
+                            Spacing="4">
+
+                            <Label
+                                Text="Ocupación"
+                                TextColor="#999999"
+                                FontSize="13" />
+
+                            <Label
+                                Text="Estudiante"
+                                TextColor="White"
+                                FontSize="20"
+                                FontAttributes="Bold" />
+
+                        </VerticalStackLayout>
+
+                    </Grid>
+
+                </Border>
+
+
+                <!-- UNIVERSIDAD -->
+
+                <Border
+                    BackgroundColor="#111111"
+                    StrokeThickness="0"
+                    Padding="20"
+                    StrokeShape="RoundRectangle 14">
+
+                    <Grid
+                        ColumnDefinitions="70,*"
+                        ColumnSpacing="18">
+
+                        <Label
+                            Text="04"
+                            TextColor="#D72638"
+                            FontSize="13"
+                            FontAttributes="Bold"
+                            VerticalOptions="Start" />
+
+                        <VerticalStackLayout
+                            Grid.Column="1"
+                            Spacing="4">
+
+                            <Label
+                                Text="Universidad"
+                                TextColor="#999999"
+                                FontSize="13" />
+
+                            <Label
+                                Text="UCES"
+                                TextColor="White"
+                                FontSize="20"
+                                FontAttributes="Bold" />
+
+                        </VerticalStackLayout>
+
+                    </Grid>
+
+                </Border>
+
+            </VerticalStackLayout>
+
+
+            <!-- PIE -->
+
+            <Label
+                Text="PROFILE / USER DATA"
+                TextColor="#999999"
+                FontSize="11"
+                HorizontalOptions="Center"
+                Margin="0,4,0,0" />
+
+        </VerticalStackLayout>
+
+    </ScrollView>
+
+</ContentPage>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<ContentPage
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="Proyecto2Refactorizado.Views.DetallePage"
+    Title="Detalle">
+
+    <VerticalStackLayout
+        Padding="30"
+        Spacing="20"
+        VerticalOptions="Center">
+
+        <!-- Título de la página secundaria -->
+        <Label
+            Text="Detalle"
+            FontSize="32"
+            FontAttributes="Bold"
+            HorizontalOptions="Center" />
+
+        <Label
+            Text="Aquí se mostrará la información del elemento seleccionado."
+            FontSize="18"
+            HorizontalTextAlignment="Center" /> 
+        <!--
+            Este Label mostrará el parámetro recibido
+            mediante la navegación por URI.
+        -->
+        <Label
+            Text="{Binding Id}"
+            FontSize="20"
+            HorizontalOptions="Center" />
+
+    </VerticalStackLayout>
+
+</ContentPage>       

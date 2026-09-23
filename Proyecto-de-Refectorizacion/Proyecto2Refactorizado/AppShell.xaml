@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!--
+    PROYECTO 2 - VERSIÓN REFACTORIZADA
+    Implementación de Shell y navegación.
+
+    Shell continúa siendo el componente encargado de
+    organizar la navegación principal de la aplicación.
+
+    Estructura:
+
+    Menú lateral
+        └── Aplicación
+              └── Pestañas
+                    ├── Inicio
+                    ├── Perfil
+                    └── Ajustes
+
+    La navegación hacia DetallePage se realiza mediante
+    una ruta secundaria registrada en AppShell.xaml.cs.
+
+    En esta versión, la navegación de InicioPage se
+    centraliza en el ViewModel mediante un Command.
+-->
+
+<Shell
+    x:Class="Proyecto2Refactorizado.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:views="clr-namespace:Proyecto2Refactorizado.Views"
+    Title="Proyecto 2 - Navegación"
+    BackgroundColor="#111111"
+    ForegroundColor="White"
+    TitleColor="White"
+    DisabledColor="#777777"
+    UnselectedColor="#D0D0D0"
+    FlyoutBackgroundColor="#111111"
+    TabBarBackgroundColor="#D72638"
+    TabBarForegroundColor="White"
+    TabBarTitleColor="White"
+    TabBarUnselectedColor="#F2B5BB">
+
+    <!--
+        CONFIGURACIÓN VISUAL
+
+        Negro:
+        estructura principal, barra superior y menú lateral.
+
+        Rojo:
+        pestañas, selección y elementos de destaque.
+
+        Blanco:
+        texto sobre fondos oscuros.
+    -->
+
+    <!--
+        MENÚ LATERAL
+
+        FlyoutItem permite acceder a la estructura
+        principal de navegación desde el menú lateral.
+    -->
+    <FlyoutItem
+        Title="Aplicación">
+
+        <!--
+            PESTAÑAS PRINCIPALES
+
+            Las tres páginas principales de la aplicación
+            se organizan mediante pestañas.
+        -->
+        <Tab
+            Title="Principal">
+
+            <!--
+                PESTAÑA INICIO
+
+                Página principal de la aplicación.
+            -->
+            <ShellContent
+                Title="Inicio"
+                ContentTemplate="{DataTemplate views:InicioPage}"
+                Route="InicioPage" />
+
+            <!--
+                PESTAÑA PERFIL
+
+                Contiene la información del usuario.
+            -->
+            <ShellContent
+                Title="Perfil"
+                ContentTemplate="{DataTemplate views:PerfilPage}"
+                Route="PerfilPage" />
+
+            <!--
+                PESTAÑA AJUSTES
+
+                Contiene las opciones de configuración.
+            -->
+            <ShellContent
+                Title="Ajustes"
+                ContentTemplate="{DataTemplate views:AjustesPage}"
+                Route="AjustesPage" />
+
+        </Tab>
+
+    </FlyoutItem>
+
+</Shell>
